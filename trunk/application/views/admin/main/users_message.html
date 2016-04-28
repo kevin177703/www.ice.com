@@ -1,0 +1,24 @@
+{{include file="admin/header.html"}}
+<body>
+	<table id="dg" class="easyui-datagrid" title="客户留言" style="width:100%;height:auto"
+			data-options="
+				rownumbers:true,singleSelect:true,pagination:true,pageSize:20,
+				queryParams: {'action':'all'},
+				iconCls: 'icon-save',
+				toolbar: '#tb',
+				url: '/{{$admin_app}}/ajax/users-message.html',
+				method: 'post',
+				onClickRow: onClickRow
+			">
+		<thead>
+			<tr>
+				<th data-options="field:'id',width:40">ID</th>
+				<th data-options="field:'username',width:130">登录帐号</th>
+				<th data-options="field:'email',width:150">电子邮箱</th>
+				<th data-options="field:'content',width:500">留言内容</th>
+				<th data-options="field:'addtime',width:130">留言时间</th>
+			</tr>
+		</thead>
+	</table>
+</body>
+</html>

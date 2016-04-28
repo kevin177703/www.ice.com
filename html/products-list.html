@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="copyright" content="ice chemical industry" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-latest.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$(".productsid, #subtop").hover(
+			function () {
+				$('.productsid').addClass('act');
+				$('#subtop').show();
+			},
+			function () {
+				$('#subtop').hide();
+				$('.productsid').removeClass('act');
+			}
+		);
+		$("#topcats li span, .catlist").hover(
+			function () {
+				var num;
+				if($(this).hasClass('catlist')){ 
+					num = $(this).index();
+				}else{
+					num = $(this).parent().index();
+				}
+				$('#topcats li span').eq(num).addClass('act');
+				$('.catlist').eq(num).show();
+			},
+			function () {
+				$('.catlist').hide();
+				$('#topcats li span').removeClass('act');
+			}
+		);
+		$(".bl li").click(function() {
+			if($(this).hasClass('act')){
+				$(this).removeClass('act');
+				$(this).next().slideUp(300);
+			}else{
+				$(this).addClass('act');
+				$(this).next().slideDown(300);
+			}
+		});
+	});	
+</script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<title>ice chemical industry</title>
+</head>
+<body class="productslist">
+	<div class="header">
+    	<div class="top">
+        	<div class="warp over">
+                <div class="logo"><a href="/">ice chemical industry</a><i></i></div>
+                <div class="nav">
+                	<ul>
+                    	<li class="productsid"><a href="###">Products+</a></li>
+                        <li><a href="###">FAQ</a></li>
+                        <li><a href="###">About</a></li>
+                        <li><a href="###">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="login"><a href="###">Customer login</a><i></i></div>
+                <!--subnav-->
+                <div id="subtop">
+                  <div id="topcats"> <span>categories</span>
+                    <ul>
+                      <li><span>STIMULATION &amp; EUPHORIA</span></li>
+                      <li><span>Smoking</span></li>
+                      <li><span>Psychostimulant NEW</span></li>
+                      <li><span>Psychostimulant</span></li>
+                      <li><span>Hallucinogenic</span></li>
+                      <li><span>Dissociative</span></li>
+                    </ul>
+                  </div>
+                  <div id="toplist">
+                    <div class="catlist"> <span>products</span>
+                      <ul>
+                        <li><a href="###">Thirtylone</a></li>
+                        <li><a href="###">5FAMB-R</a></li>
+                        <li><a href="###">5-MAPB</a></li>
+                        <li><a href="###">4FPV9</a></li>
+                        <li><a href="###">4FPV8</a></li>
+                        <li><a href="###">4-BMC</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="catlist"> <span>products</span>
+                      <ul>
+                        <li><a href="###">THJ-2201</a></li>
+                        <li><a href="###">SUBAKB48</a></li>
+                        <li><a href="###">STS-135</a></li>
+                        <li><a href="###">PX2</a></li>
+                        <li><a href="###">MN-018</a></li>
+                        <li><a href="###">MDMB-CHMINACA</a></li>
+                        <li><a href="###">MAM-2201</a></li>
+                        <li><a href="###">FUB-PB-22</a></li>
+                        <li><a href="###">EG018 (EG-018)</a></li>
+                        <li><a href="###">AB-PINACA</a></li>
+                        <li><a href="###">AB-FUBINACA</a></li>
+                        <li><a href="###">AB-CHMINACA</a></li>
+                        <li><a href="###">5Fur-144</a></li>
+                        <li><a href="###">5F-PB-22</a></li>
+                        <li><a href="###">5F-AMB</a></li>
+                        <li><a href="###">5F-AKB48</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="catlist"> <span>products</span>
+                      <ul>
+                        <li><a href="###">MPHP</a></li>
+                        <li><a href="###">Methoxphenidine</a></li>
+                        <li><a href="###">Dimethylone (M11)</a></li>
+                        <li><a href="###">Alpha-PHP</a></li>
+                        <li><a href="###">Allylescaline</a></li>
+                        <li><a href="###">5-MeO-MiPT</a></li>
+                        <li><a href="###">4F-PVP</a></li>
+                        <li><a href="###">Fluorococaine</a></li>
+                        <li><a href="###">2-FA</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="catlist"> <span>products</span>
+                      <ul>
+                        <li><a href="###">RTI-111</a></li>
+                        <li><a href="###">PV9</a></li>
+                        <li><a href="###">PV8 (Crystal)</a></li>
+                        <li><a href="###">Methylone (Crystal)</a></li>
+                        <li><a href="###">Methoxetamine</a></li>
+                        <li><a href="###">MDPV</a></li>
+                        <li><a href="###">Ethylphenidate</a></li>
+                        <li><a href="###">Ethylone</a></li>
+                        <li><a href="###">Dibutylone</a></li>
+                        <li><a href="###">Alpha-PVP</a></li>
+                        <li><a href="###">4-MEC</a></li>
+                        <li><a href="###">4-CMC (crystal)</a></li>
+                        <li><a href="###">3-MMC</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="catlist"> <span>products</span>
+                      <ul>
+                        <li><a href="###">5-MeO-DALT</a></li>
+                        <li><a href="###">25i-NBOMe</a></li>
+                        <li><a href="###">25C-NBOMe</a></li>
+                        <li><a href="###">25B-NBOMe</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="catlist"> <span>products</span>
+                      <ul>
+                        <li><a href="###">Methoxetamine</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+                <!--subnav end-->
+            </div>
+        </div>
+    </div>
+    <div class="mbg">
+		<div class="main clearfix">
+			<div class="sidebar">
+           		<!--subnav-->
+            	<div class="subnav">
+                	<div class="box-t"></div>
+                    <ul class="bl">
+                    	<h2>catagories</h2>
+                    	<li>● Dissociative</li>
+                            <ul style="display: none;">
+                                <li><a href="###">Methoxetamine</a></li>
+                            </ul>
+                        <li>● Hallucinogenic</li>
+                            <ul style="display: none;">
+                                <li><a href="###" >5-MeO-DALT</a></li>
+                                <li><a href="###" >25i-NBOMe</a></li>
+                                <li><a href="###" >25C-NBOMe</a></li>
+                                <li><a href="###" >25B-NBOMe</a></li>
+                            </ul>
+                    </ul>
+                    <div class="box-b"></div>
+                </div>
+                <!--subnav end-->
+          		<!--info-->
+            	<div class="info">
+                	<div class="box-t"></div>
+                    <div class="ic1">
+                    	<div class="ic2">
+                        	<h2>Dear Customers!</h2>
+                            <p>Currently we produce a reorganization of our online orders system. Within the nearest time we will show you a convenient system for tracking orders and communicate with our managers. If you want to order some kind of our products please use our <a href="###">current order form.</a></p><i>Thank you for understanding!</i>
+                        </div>
+                    </div>
+                    <div class="box-b"></div>
+                </div>
+                <!--info end-->
+                <!--nbanner-->
+                <div class="nbanner"><div class="nbtn"><a href="###">CLICK</a></div></div>
+                <!--nbanner end-->
+            </div>
+            <div class="content">
+            	<h1>PRODUCTS</h1>
+                <!--products-list-->
+                <div class="bd clearfix">
+                    <ul class="picList">
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test01.jpg"> <i></i> <em>MORE<br>
+                                INFO</em>
+                                <div class="color">
+                                    <p style="background-color:#069;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                    <p style="background-color:#363;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                    <p style="background-color:#363;"></p>
+                                </div>
+                                </a></div>
+                            <div class="title"><a href="###">THJ-2201</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test02.jpg"> <i></i> <em>MORE<br>
+                                INFO</em>
+                                <div class="color">
+                                    <p style="background-color:#069;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                </div>
+                                </a></div>
+                            <div class="title"><a href="###">NM-2201</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test03.jpg"> <i></i> <em>MORE<br>
+                                INFO</em> </a></div>
+                            <div class="title"><a href="###">FDU-PB-22</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test04.jpg"> <i></i> <em>MORE<br>
+                                INFO</em> </a></div>
+                            <div class="title"><a href="###">THJ-2201</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"><a href="###"><img src="images/test05.jpg"><i></i><em>MORE<br>
+                                INFO</em></a></div>
+                            <div class="title"><a href="###">NM-2201</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test06.jpg"> <i></i> <em>MORE<br>
+                                INFO</em>
+                                <div class="color">
+                                    <p style="background-color:#069;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                    <p style="background-color:#363;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                    <p style="background-color:#363;"></p>
+                                </div>
+                                </a></div>
+                            <div class="title"><a href="###">FDU-PB-22</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test04.jpg"> <i></i> <em>MORE<br>
+                                INFO</em> </a></div>
+                            <div class="title"><a href="###">THJ-2201</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"><a href="###"><img src="images/test05.jpg"><i></i><em>MORE<br>
+                                INFO</em></a></div>
+                            <div class="title"><a href="###">NM-2201</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"> <a href="###"> <img src="images/test06.jpg"> <i></i> <em>MORE<br>
+                                INFO</em>
+                                <div class="color">
+                                    <p style="background-color:#069;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                    <p style="background-color:#363;"></p>
+                                    <p style="background-color:#0C3;"></p>
+                                    <p style="background-color:#363;"></p>
+                                </div>
+                                </a></div>
+                            <div class="title"><a href="###">FDU-PB-22</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <!--products-list end-->
+                <div class="scott">
+                    <span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a>...<a href="#?page=200">200</a><a href="#?page=2"> > </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    	<div class="warp">
+        	<div class="blogo">
+            	<a href="/">ice chemical industry</a>
+            </div>
+            <div class="copyright">Copyright © 2013-2015 jingcheng.com All rights reserved</div>
+            <ul class="bnav">
+            	<li><a href="###">Products</a></li>
+                <li><a href="###">FAQ</a></li>
+                <li><a href="###">About</a></li>
+                <li><a href="###">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
